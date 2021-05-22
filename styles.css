@@ -31,3 +31,8 @@
 body {
   font: 100% "Poppins", sans-serif;
 }
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
