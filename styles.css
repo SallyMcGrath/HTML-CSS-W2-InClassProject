@@ -71,7 +71,7 @@ img{grid-area:box1; }
 ol{
   grid-area:box3;
   padding:15px;
-  align-items:left;
+  text-align:left;
   font-style: italic;
 
 }
