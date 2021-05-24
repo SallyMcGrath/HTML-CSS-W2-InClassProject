@@ -31,11 +31,11 @@
 body {
   
   font: 100% Arial, Helvetica, sans-serif;
-    background:rgba(147, 112, 216, 0.74);
+  background:rgba(147, 112, 216, 0.74);
 }
 header{
   display:grid;
-  justify-content: center;
+  justify-content:center;
   grid-template-areas: "h1" "p";
   margin-bottom:100px;
   margin-top:100px;
@@ -48,18 +48,18 @@ main{
 
   display:flex;
   flex-direction:row;
-  justify-content:space-around;
+  justify-content:space-evenly;
   margin-bottom:150px;
 }
 section{
-   border:5px solid rgba(255, 187, 0, 0.589);
+  border:5px solid red;
   padding: 20px;
   display:grid;
-  background-color:rgba(127, 255, 212, 0.356); 
-  width:30%;
-  justify-content:start;
+  background-color:rgba(127, 255, 212, 0.521); 
+  width:20%;
+  align-items:center;
   grid-template-areas:"box1 box2"
-  "box7 box7";
+  "box3 box3";
  
   
 }
@@ -68,48 +68,41 @@ h2{
   grid-area:box2; 
 }
 img{grid-area:box1; }
-ol{grid-area:box7;
-padding:15px;
-align-items:left;
-font-style: italic;
+ol{
+  grid-area:box3;
+  padding:15px;
+  align-items:left;
+  font-style: italic;
 
 }
-li{line-height: 20pt;}
+li{line-height: 30pt;}
 
 footer{
   display:flex;
   justify-content: center;
 }
 
-@media screen and (max-width:661px) { 
+@media screen and (max-width:1570px) { 
   main{
   display:flex;
   flex-direction:column;
-  
-  
   align-items:center;
   margin-bottom:50px;
 }
 
 section{
   
- border:10px solid red;
-  padding: 20px;
-  display:grid;
-  background-color:rgba(127, 255, 212, 0.521); 
-  width:50%;
+ 
+  width:55%;
   justify-content:center;
-  grid-template-areas:"box1 box2"
-  "box7 box7";
- margin-bottom: 30px;
+  margin-bottom: 30px;
   
   
  
 }
 header{
-  display:grid;
-  justify-content: center;
-  grid-template-areas: "h1" "p";
+  
+
   margin-bottom:10px;
   margin-top:10px;
 }
@@ -124,24 +117,15 @@ header{
 }
 
 section{
-  
- border: 5px solid rgba(255, 0, 0, 0.719);
-  padding: 20px;
-  display:grid;
-  background-color:rgba(127, 255, 212, 0.521); 
   width:80%;
   justify-content:start;
-  grid-template-areas:"box1 box2"
-  "box7 box7";
- margin-bottom: 30px;
+  margin-bottom: 30px;
   
   
  
 }
 header{
-  display:grid;
-  justify-content: center;
-  grid-template-areas: "h1" "p";
+  
   margin-bottom:10px;
   margin-top:10px;
 }
