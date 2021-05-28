@@ -31,9 +31,9 @@
 /* General styles */
 :root {
   --spacing: clamp(1vw, calc(10px + 1vw), 2vw);
-  --omercolor: #d1495b;
-  --seyedcolor: #f79824;
-  --seancolor: #00798c;
+  --omercolor: #8a0012;
+  --seyedcolor: #004931;
+  --seancolor: #004a55;
   --background: #eff6e0;
 }
 body {
@@ -70,8 +70,11 @@ main > div {
 .title > h2 {
   text-align: center;
 }
-.img-wrapper {
-  flex-basis: 0 1 40%;
+.tl {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
 }
 .img-wrapper img {
   max-width: 210px;
@@ -79,14 +82,12 @@ main > div {
   border: 2px solid;
   border-radius: 3%;
 }
-.tl {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-}
 .omer, .sean, .seyed {
   color: #fff;
+  font-weight: 500;
+}
+.img-wrapper {
+  margin-left: 0.5rem;
 }
 .omer {
   background-color: var(--omercolor);
@@ -100,14 +101,55 @@ main > div {
   background-color: var(--seancolor);
   grid-area: sean;
 }
-.wrapper ol {
-  /* padding-left: 1em; */
+.tl ol {
+  margin: 0;
+  padding: 0;
+  padding-left: 1rem;
 }
 
 /* Footer */ 
 footer {
   text-align: center;
   margin-bottom: 2rem;
+}
+
+/* Media queries */ 
+@media screen and (min-width: 250px) and (max-width: 600px) {
+  main {
+    grid-template-areas: 
+    ". . . . . . "
+    ". omer omer omer omer ."
+    ". seyed seyed seyed seyed ."
+    ". sean sean sean sean ."
+    ". . . . . ."
+    ;
+    
+  }
+  .img-wrapper img {
+    max-width: 120px;
+    max-height: auto;
+  }
+  .tl ol {
+    padding-left: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 800px) {
+  main {
+    display: flex;
+    flex-flow: column wrap;
+  }
+  .img-wrapper img {
+    max-width: 135px;
+    max-height: auto;
+  }
+}
+
+@media screen and (min-width: 801px) and (max-width: 1100px) {
+  .img-wrapper img {
+    max-width: 150px;
+    max-height: auto;
+  }
 }
 
 
