@@ -30,22 +30,22 @@
 
 /* General styles */
 :root {
-  --spacing: clamp(2vw, calc(10px + 2vw), 3vw);
-  --omercolor: #03045e;
-  --seyedcolor: #023e8a;
-  --seancolor: #0077b6;
+  --spacing: clamp(1vw, calc(10px + 1vw), 2vw);
+  --omercolor: #d1495b;
+  --seyedcolor: #f79824;
+  --seancolor: #00798c;
+  --background: #eff6e0;
 }
 body {
   font: 100% "Newsreader", "Poppins", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #ffffff;
+  background-color: var(--background);
 }
 header {
   margin-top: 2rem;
   text-align: center;
-  border: 2px solid;
 }
 
 h1, h2, h3, h4 {
@@ -61,31 +61,29 @@ main {
   ". . sean sean . ."
   ". . . . . ."
   ;
+  justify-items: stretch;
 }
 main > div {
   display: flex;
   flex-flow: column nowrap;
 }
-.title {
-  
-  border: 2px solid;
-}
-.title h2 {
-  border: 2px solid red;
-}
-.tl {
-  
-   border: 2px solid;
+.title > h2 {
+  text-align: center;
 }
 .img-wrapper {
   flex-basis: 0 1 40%;
-   border: 2px solid; 
 }
 .img-wrapper img {
   max-width: 210px;
   max-height: 140px;
   border: 2px solid;
   border-radius: 3%;
+}
+.tl {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
 }
 .omer, .sean, .seyed {
   color: #fff;
@@ -103,8 +101,7 @@ main > div {
   grid-area: sean;
 }
 .wrapper ol {
-  padding-left: 1em;
-  border: 2px solid red;
+  /* padding-left: 1em; */
 }
 
 /* Footer */ 
