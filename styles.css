@@ -47,6 +47,10 @@ header {
   margin-top: 2rem;
   text-align: center;
 }
+header p {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
 
 h1, h2, h3, h4 {
   padding: 0;
@@ -92,6 +96,7 @@ main > div {
 .omer {
   background-color: var(--omercolor);
   grid-area: omer;
+  transition: opacity 1s ease 0sn;
 }
 .seyed {
   background-color: var(--seyedcolor);
