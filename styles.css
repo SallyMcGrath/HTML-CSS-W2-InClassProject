@@ -88,3 +88,36 @@ footer h3 {
   font-size: 1.75rem;
   text-align: center;
 }
+
+/* responsive desings */
+
+@media screen and (max-width:1200px){
+  main article {
+    grid-template-columns: 3fr 5fr;
+    grid-template-rows: 1fr 2fr;
+  }
+}
+@media screen and (max-width:1024px){
+  main {
+    flex-direction: column;
+  }
+  main article {
+    /* grid-template-columns: 3fr 5fr; */
+    grid-template-rows: 1fr 1fr;
+    margin: 6rem auto;
+    width: 80%;
+  }
+}
+@media screen and (max-width:600px){
+  html {
+    font-size: 12px;
+  }
+  article img {
+    align-self: center;
+  }
+}
+@media screen and (max-width:450px) {
+  html {
+    font-size: 8px;
+  }
+}
