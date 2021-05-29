@@ -67,7 +67,7 @@ main {
   ;
   justify-items: stretch;
 }
-main > div {
+main > section {
   display: flex;
   flex-flow: column nowrap;
 }
