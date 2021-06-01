@@ -28,34 +28,120 @@
 * take a screenshot at laptop and Moto G4 device sizes in Devtools
 */
 
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&display=swap");
+
 body {
   font: 100% "Poppins", sans-serif;
+  box-sizing: border-box;
+  height: 100%;
+  background: rgb(250, 143, 235);
+  background: linear-gradient(
+    45deg,
+    rgba(250, 143, 235, 1) 0%,
+    rgba(255, 245, 150, 1) 100%
+  );
 }
 
-h1,
-h3,
-p {
+header {
   text-align: center;
+  color: #e26218;
 }
 
-.main-container {
-  width: 80%;
-  height: 800px;
-  border: 5px solid red;
-  margin: 10% auto;
+main {
+  margin: 5% 2%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  flex-flow: wrap;
+}
+
+.card-container {
+  padding: 0.5%;
+  color: #e26218;
+  border: 5px solid #e26218;
+  border-radius: 10px;
+  width: 35%;
+  min-width: 300px;
+  /* height: 24rem; */
+  margin: 2rem 1rem;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "box1 box2 box2"
+    "box3 box3 box3";
+}
+
+h1 {
+  text-align: center;
+  margin: auto 20%;
+}
+
+img {
+  width: 150%;
+  margin-top: 2rem;
+  border: 2px dotted #e26218;
+  border-radius: 5px;
+}
+
+.box-1 {
+  grid-area: box1;
+  padding: 1em;
+  margin: auto 5px;
+}
+
+.box-2 {
+  grid-area: box2;
+  padding: 1em;
+  margin: 1px;
+  display: flex;
   align-items: center;
 }
 
-.sharmaine {
-  width: 500px;
-  height: 500px;
-  background-color: aqua;
+.box-3 {
+  grid-area: box3;
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
 }
 
-.terry {
-  width: 500px;
-  height: 500px;
-  background-color: greenyellow;
+.box-3 ol {
+  display: flex;
+  flex-direction: column;
+}
+
+.box-3 li {
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: 3rem;
+  display: inline;
+}
+
+@media (max-width: 740px) {
+  body {
+    box-sizing: border-box;
+    height: 100%;
+    background: rgb(250, 143, 235);
+    background: linear-gradient(
+      45deg,
+      rgba(250, 143, 235, 1) 0%,
+      rgba(255, 245, 150, 1) 100%
+    );
+  }
+
+  .card-container {
+    width: 80%;
+  }
+
+  h1 {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .box-3 li {
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 3rem;
+    display: inline;
+  }
 }
