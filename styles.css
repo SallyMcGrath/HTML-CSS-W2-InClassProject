@@ -44,13 +44,34 @@ h4{
 #box{
   display: grid;
   grid-template-columns: repeat(2,1fr);
-margin: 15px;  
+  margin: 15px;  
+}
+.box{
   border: 2px solid blue;
+  float: left;
+  margin: 15px;
+  grid-template-columns: 40px 50px auto 50px 40px;
+  
+
+
 }
 .image{
+  border: 1px solid grey;
+  margin: 20px;
   width: 200px;
   height: 200px;
 }
 .name{
+  font-size: small;
+  float: right;
+  
 
+}
+li{
+  list-style-type: none;
+}
+
+footer{
+  margin-top: 50px;
+  text-align: center;
 }
