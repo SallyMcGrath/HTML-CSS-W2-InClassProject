@@ -44,4 +44,13 @@ h4{
 #box{
   display: grid;
   grid-template-columns: repeat(2,1fr);
+margin: 15px;  
+  border: 2px solid blue;
+}
+.image{
+  width: 200px;
+  height: 200px;
+}
+.name{
+
 }
