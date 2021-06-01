@@ -30,6 +30,7 @@
 
 body {
   font: 100% "Poppins", sans-serif;
+  background-color: grey;
 }
 header{
   text-align: center;
@@ -51,6 +52,7 @@ h4{
   float: left;
   margin: 15px;
   grid-template-columns: 40px 50px auto 50px 40px;
+  background-color: ivory;
   
 
 
@@ -64,7 +66,16 @@ h4{
 .name{
   font-size: small;
   float: right;
+  margin-right: 50px;
+  margin-top: 90px;
   
+
+}
+.name1{
+  font-size: small;
+  float: right;
+  margin-right: 150px;
+  margin-top: 90px;
 
 }
 li{
