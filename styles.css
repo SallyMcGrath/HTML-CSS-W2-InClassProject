@@ -28,6 +28,131 @@
 * take a screenshot at laptop and Moto G4 device sizes in Devtools
 */
 
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&display=swap");
+
 body {
   font: 100% "Poppins", sans-serif;
+  box-sizing: border-box;
+  height: 100vh;
+
+  background: rgb(255, 195, 105);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 195, 105, 1) 0%,
+    rgba(249, 131, 255, 1) 100%
+  );
+}
+
+header {
+  text-align: center;
+  color: #e26218;
+}
+
+main {
+  margin: 0 2%;
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap;
+}
+
+.card-container {
+  padding: 0.5%;
+  color: #e26218;
+  border: 5px solid #e26218;
+  border-radius: 10px;
+  width: 37%;
+  min-width: 300px;
+  margin: 2rem 1rem;
+  display: grid;
+  align-items: center;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "box1 box2 box2"
+    "box3 box3 box3";
+}
+
+h1,
+h2 {
+  text-align: center;
+  margin: auto 20%;
+  padding: 1rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  margin: 2rem;
+  border: 2px dotted #e26218;
+  border-radius: 5px;
+}
+
+.box-1 {
+  grid-area: box1;
+  margin: auto 5px;
+}
+
+.box-2 {
+  grid-area: box2;
+  padding: 1em;
+  margin: 1px;
+}
+
+.box-3 {
+  grid-area: box3;
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.box-3 ol {
+  display: flex;
+  flex-direction: column;
+}
+
+.box-3 li {
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: 3rem;
+}
+
+footer h4 {
+  color: #e26218;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+@media (max-width: 1820px) {
+  body {
+    font-size: 100%;
+  }
+}
+
+@media (max-width: 740px) {
+  .card-container {
+    width: 80%;
+    max-height: 60%;
+  }
+
+  h1 {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  .box-3 li {
+    font-size: 1rem;
+  }
+
+  footer h3 {
+    margin: 10%;
+  }
 }
