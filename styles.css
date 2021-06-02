@@ -30,6 +30,7 @@
 
 body {
   font: 100% "Poppins", sans-serif;
+  background-color: rgb(221, 250, 250);
 }
 footer {
   display: flex;
@@ -38,7 +39,60 @@ footer {
 }
 main {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  gap: 10px;
 }
 
-/* Use flex box row wrap with max-width 480px. don't go above 480px as a genral rule for two cards. Sallly added flex to the boby so two cards in the grid had lex to them
+/* Use flex box row wrap with max-width 480px. don't go above 480px as a genral rule for two cards. Sallly added flex to the boby so two cards in the grid had lex to them */
+
+.heading {
+  text-align: center;
+  padding: 10px;
+  font-size: 1.2em;
+  border: rgb(145, 145, 145) 2px solid;
+}
+.head-para {
+  text-align: center;
+  padding: 10px;
+  font-size: 1.2em;
+  border: rgb(145, 145, 145) 2px solid;
+}
+.name-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 20px;
+  font-size: small;
+}
+
+.images {
+  width: 80px;
+  height: 60px;
+}
+.truth-lie {
+  border: rgb(145, 145, 145) 2px solid;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  max-width: 480px;
+}
+.list {
+  list-style-type: none;
+}
+#declan-section {
+  background-color: rgb(133, 2, 2);
+  color: white;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 960px) {
+  main {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    margin: 20px;
+    justify-content: space-around;
+  }
+}
