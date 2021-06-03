@@ -61,6 +61,8 @@ body {
   grid-area: name;
   margin-right: 20px;
   font-size: 26px;
+  /* Test 
+  font-size: 200%;*/
   font-weight: lighter;
 }
 
