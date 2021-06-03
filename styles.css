@@ -30,4 +30,65 @@
 
 body {
   font: 100% "Poppins", sans-serif;
+  background-color: rgb(106, 104, 104);
+  text-align: center;
+  color: white;
+}
+
+.Oneil, .Alex {
+  display: grid;
+  background: linear-gradient(105deg,rgb(50, 48, 48),rgba(255, 255, 255, 0.842));
+  color: white;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 20px;
+  width: 275px;
+  grid-template-areas: 
+  "picture name"
+  "list list";
+  grid-gap: 5px;
+  text-align: left;
+}
+
+.picture {
+  grid-area: picture;
+  border: 1px solid rgb(253, 251, 251);
+  width: 100px;
+
+}
+
+.name {
+  grid-area: name;
+  margin-right: 20px;
+  font-size: 26px;
+  /* Test 
+  font-size: 200%;*/
+  font-weight: lighter;
+}
+
+.list {
+  grid-area: list;
+  justify-self: start;
+  margin: 5px;
+  padding: 10px;
+  font-style: italic;
+}
+
+@media (min-width: 300px) {
+
+  main {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+  }
+
+  footer {
+    margin: 100px 0;
+  }
+}
+
+@media (max-width: 450px) {
+  .name {
+    font-size: 24px;
+  }
 }
