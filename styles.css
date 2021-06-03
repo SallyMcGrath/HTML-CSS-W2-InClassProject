@@ -37,9 +37,8 @@ body {
 
 .Oneil, .Alex {
   display: grid;
-  background: linear-gradient(145deg,rgb(102, 95, 95),white);
-  color: black;
-  border: 1px white solid;
+  background: linear-gradient(105deg,rgb(50, 48, 48),rgba(255, 255, 255, 0.842));
+  color: white;
   border-radius: 5px;
   margin: 10px;
   padding: 20px;
