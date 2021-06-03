@@ -30,4 +30,105 @@
 
 body {
   font: 100% "Poppins", sans-serif;
+  background-color: rgb(224, 224, 224);
+}
+
+main {
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 10px;
+}
+
+/* Use flex box row wrap with max-width 480px. don't go above 480px as a genral rule for two cards. Sallly added flex to the boby so two cards in the grid had lex to them */
+
+/* --Heading-- */
+.heading {
+  text-align: center;
+  padding: 10px;
+  font-size: 1.9em;
+}
+.head-para {
+  text-align: center;
+  padding: 10px;
+  font-size: 1.2em;
+}
+
+/* --Cards-- */
+.truth-lie {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 480px;
+}
+
+.name-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  font-size: small;
+  gap: 20px;
+}
+
+.images {
+  width: 80px;
+  height: 80px;
+}
+.name-heading {
+  width: 50px;
+}
+
+li {
+  margin: 10px;
+}
+section:first-child {
+  border: rgb(3, 3, 3) 5px solid;
+  background-color: rgb(133, 2, 2);
+  color: white;
+  font-weight: bold;
+}
+section:last-child {
+  border: rgba(8, 8, 8, 0.712) 5px solid;
+  background-color: rgb(194, 39, 39);
+  color: white;
+  font-weight: bold;
+}
+
+/* --FOOTER-- */
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+@media screen and (min-width: 960px) {
+  /* --MAIN-- */
+
+  main {
+    display: grid;
+    grid-template-columns: 480px 480px;
+    gap: 10px;
+    margin: 90px 20px;
+    justify-content: space-around;
+  }
+
+  /* --Cards-- */
+
+  .images {
+    width: 100px;
+    height: 100px;
+  }
+  .name-heading {
+    width: 250px;
+  }
+
+  /* --FOOTER-- */
+
+  footer {
+    font-size: 2em;
+  }
 }
