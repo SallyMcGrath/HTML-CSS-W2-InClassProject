@@ -30,4 +30,82 @@
 
 body {
   font: 100% "Poppins", sans-serif;
+  background-color: black;
+  color: yellow;
+  text-align: center;
+}
+
+main {
+  display: grid;
+  gap: 15px;
+  grid-template-areas: ". azan abed .";
+  justify-items: stretch;
+  margin-top: 7%;
+  grid-template-columns: 0 2fr 2fr 0;
+}
+
+.name {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: gold;
+  font-weight: 700;
+  padding-top: 2%;
+}
+
+.name h2 {
+  margin-right: 30%;
+}
+.name img {
+  margin-left: 3%;
+  max-width: 250px;
+  max-height: 150px;
+  border: 3px solid goldenrod;
+  border-radius: 10px;
+}
+
+.azan {
+  grid-area: azan;
+  border-radius: 10px;
+  transition: 0.5s;
+  padding-top: 10px;
+}
+.azan:hover {
+  box-shadow: 0px 0px 20px gold;
+}
+
+.abed {
+  border-radius: 10px;
+  transition: 0.5s;
+  padding-top: 10px;
+  grid-area: abed;
+}
+
+.abed:hover {
+  box-shadow: 0px 0px 20px gold;
+}
+
+.statements {
+  padding: 1rem;
+  text-align: left;
+  margin-left: 5%;
+}
+
+footer {
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+@media screen and (max-width: 700px) {
+  main {
+    grid-template-areas: 
+    ". azan azan ."
+    ". abed abed .";
+    
+  }
+  .name img {
+    max-width: 150px;
+    max-height: auto;
+  }
 }
