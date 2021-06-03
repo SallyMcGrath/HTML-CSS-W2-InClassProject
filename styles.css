@@ -37,9 +37,10 @@ body {
 
 .Oneil, .Alex {
   display: grid;
-  background: radial-gradient(rgb(0, 0, 0, 0), #fafafa);
+  background: linear-gradient(145deg,rgb(102, 95, 95),white);
   color: black;
-  border-radius: 10px 5px;
+  border: 1px white solid;
+  border-radius: 5px;
   margin: 10px;
   padding: 20px;
   width: 275px;
@@ -52,8 +53,7 @@ body {
 
 .picture {
   grid-area: picture;
-  /* margin: 20px 0 20px 20px; */
-  border: 1px solid white;
+  border: 1px solid rgb(253, 251, 251);
   width: 100px;
 
 }
@@ -69,7 +69,6 @@ body {
   grid-area: list;
   justify-self: start;
   margin: 5px;
-  /* border: 1px solid white; */
   padding: 10px;
   font-style: italic;
 }
@@ -78,12 +77,11 @@ body {
 
   main {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-flow: row wrap;
-    /* margin: 100px 0; */
   }
 
-  footer{
+  footer {
     margin: 100px 0;
   }
 }
