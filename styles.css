@@ -30,4 +30,87 @@
 
 body {
   font: 100% "Poppins", sans-serif;
+  background-color:#a1b68b;
+  line-height: 1.1;
+  display: grid;
+  gap: 20px 40px;
+  grid-template-rows: auto auto 1fr;
+  grid-template-areas:
+     ". header ."
+     ". main ."
+     ". footer .";
 }
+
+header {
+  grid-area: header;
+  text-align: center;
+  margin: 0;
+}
+
+
+main {
+  grid-area: main;
+  display: flex;
+  justify-content: space-around;
+}
+
+.box {
+  display: grid;
+  gap: 10px;
+  grid-template-rows: 0 auto 1fr 0;
+  grid-template-areas:
+  ". . . ." 
+  ". image person ."
+  ". options options ."
+  ". . . ."
+  ;
+  width: 100%;
+  max-width: 480px;
+  margin: 10px 20px 20px;
+  background: aliceblue;
+  box-shadow: 2px 3px 5px hsla(90, 12%, 12%, 0.15);
+  border: 0.5px solid hsla(90, 12%, 12%, 0.15);
+}
+
+.person {
+  grid-area: person;
+  margin-top: 50px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.icon {
+  grid-area: image;
+  width: 100px;
+}
+.options {
+  grid-area: options;
+}
+
+footer {
+  grid-area: footer;
+  text-align: center;
+}
+
+@media (max-width: 550px) {
+  main {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+  .box {
+    width: 100%;
+    max-width: 480px;
+    margin: 10px 0 20px;
+  }
+  .icon {
+    margin: 10px;
+    width: 80px;
+}
+
+
+
+
+
+
+
+
